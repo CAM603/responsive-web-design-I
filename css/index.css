@@ -75,15 +75,22 @@ body{
 }
 /* Navigation */
 .nav_bar{
-	height: 5%;
-	display:flex;
+	display: flex;
 	justify-content: space-between;
-	align-items: center;
+}
+.nav_div{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.nav_img{
+	display: flex;
+	padding: 10px;
 }
 .nav_bar a{
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	padding: 10px;
 }
 .nav_bar a:hover{
 	background-color: black;
@@ -130,6 +137,11 @@ body{
 	background-size: cover;
 	height: 300px;
 	width: 300px;
+}
+
+ /* Style HR tags */
+hr{
+	border:solid black 1.5px;
 }
 
 /* Features and About Section */
@@ -189,6 +201,20 @@ footer{
 
 /* Max 800px */
 @media(max-width: 800px){
+	/* Navigation */
+	.nav_bar{
+		flex-direction: column-reverse;
+	}
+	.nav_img{
+		justify-content: center;
+	}
+	.header_box2{
+		display: none;
+	}
+	.header_box1{
+		width: 100%;
+	}
+
 
 }
 
