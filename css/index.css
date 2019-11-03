@@ -146,7 +146,7 @@ hr{
 
 /* Features and About Section */
 .about_section{
-	height: 150px;
+	height: 200px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -157,7 +157,7 @@ hr{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 140px;
+	height: 200px;
 	width: 45%;
 }
 /* Middle Picture */
@@ -168,7 +168,7 @@ hr{
 }
 /* Services, Product, Vision Section */
 .middle_section{
-	height: 200px;
+	height: 300px;
 	display: flex;
 	flex-wrap: wrap;
 	flex-direction: column;
@@ -179,9 +179,10 @@ hr{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	height: 140px;
+	height: 100%;
 	width: 30%;
 }
+
 
 /* Contact section */
 footer{
@@ -214,12 +215,63 @@ footer{
 	.header_box1{
 		width: 100%;
 	}
+	/* Less Margin */
+	.container{
+		width: 90%;
+	}
 
 
 }
 
 /* Max 500px */
 @media(max-width: 500px){
-
+	.nav_div{
+		flex-direction: column;
+		align-items: center;
+	}
+	.nav_div a{
+		border-bottom: solid black 1px;
+		width: 100%;
+		justify-content: center;
+	}
+	.nav_img{
+		border-bottom: solid black 1px;
+	}
+	.header{
+		height: 300px;
+	}
+	.about_section{
+		height: 40%;
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-content: baseline;
+	}
+	.about_section div{
+		width: 100%;
+		height: 50%;
+	}
+	.middle_img{
+		height: 8%;
+		background-image: url("/img/mid-page-accent.jpg");
+		background-size: cover;
+	}
+	.middle_section{
+		height: 50%;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: center;
+		align-content: space-between;
+	}
+	.middle_section div{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		height: 35%;
+		width: 100%;
+	}
 }
+
 
