@@ -69,7 +69,7 @@ h1, h2, h3, h4, h5 {
 body{
 	display: flex;
 	justify-content: center;
-	width: 100vw;
+	width: 100%;
 }
 .container{
 	width: 80%;
@@ -141,6 +141,10 @@ body{
 	height: 300px;
 	width: 300px;
 }
+.header_box2 .img:hover {
+	-webkit-filter: invert(100%);filter: invert(100%);
+}
+
 
  /* Style HR tags */
 hr{
@@ -168,6 +172,9 @@ hr{
 	height: 150px;
 	background-image: url("/img/mid-page-accent.jpg");
 	background-size: cover;
+}
+.middle_img:hover{
+	-webkit-filter: invert(100%);filter: invert(100%);
 }
 /* Services, Product, Vision Section */
 .middle_section{
