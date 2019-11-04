@@ -23,7 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	border: solid black 1px;
+	/* border: solid black 1px; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -66,7 +66,7 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* My Code Starts Here */
+/************** My Code Starts Here **************/
 .body{
 	display: flex;
 	justify-content: center;
@@ -76,10 +76,11 @@ h1, h2, h3, h4, h5 {
 .container{
 	width: 80%;
 }
-/* Navigation */
+/************** Navigation **************/
 .navigation{
 	display: flex;
 	justify-content: space-between;
+	margin: 20px 0px;
 }
 .nav{
 	display: flex;
@@ -88,10 +89,19 @@ h1, h2, h3, h4, h5 {
 }
 .nav_img{
 	display: flex;
-	width: 25%;
+	min-width: 25%;
 	justify-content: flex-end;
 }
-/* Top Image */
+.nav a{
+	font-size: 1.1rem;
+	padding: 5px;
+}
+.nav a:hover{
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px;
+}
+/************** Top Image **************/
 .top_img{
 	display: flex;
 	justify-content: center;
@@ -100,7 +110,7 @@ h1, h2, h3, h4, h5 {
 	background-image: url("/img/services-header.jpg");
 	background-size: cover;
 }
-/* Services Section */
+/************** Services Section ************* */
 .services{
 	width: 100%;
 	display: flex;
@@ -110,31 +120,49 @@ h1, h2, h3, h4, h5 {
 	font-size: 1rem;
 	line-height: 1.5;
 }
+.services h1{
+	font-size: 2rem;
+}
 
-/* Box Section */
+/************** Box Section **************/
 .box_container{
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	
 }
 .box_container .box{
 	width: 48%;
 	display: flex;
 	flex-direction: column;
-	padding: 10px;
+	padding: 15px;
+	border: solid black 1px;
+	background-color: gainsboro;
+	margin: 20px 0px
 }
 .box_container .box button{
 	width: 30%;
 	padding: 5px;
-	border:solid orange 1px;
+	font-size: .75rem;
+	font-weight: bold;
+	border:solid black 1px;
+	background-color: lightcyan;
 	margin: 10px 10px 10px 0px;
 }
+.box_container .box button:hover{
+	background-color: black;
+	color: white;
+}
+
 .box_container .box p{
 	line-height: 1.5;
 	font-size: 1rem;
 }
-/* Facts Section */
+.box_container .box h2{
+	font-size: 1.1rem;
+}
+/************** Facts Section **************/
 .facts{
 	width: 100%;
 	display: flex;
@@ -144,5 +172,23 @@ h1, h2, h3, h4, h5 {
 	width: 48%;
 }
 .facts .facts_img{
-	background-image: url("");
+	background-image: url("/img/services-info.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-height: 100%;
+}
+.facts .facts_div p{
+	font-size: 1rem;
+	line-height: 1.5;
+}
+.facts .facts_div ul{
+	list-style-type: disc;
+	margin: 0px 0px 0px 25px;
+}
+/************** Copyright **************/
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
 }
