@@ -72,15 +72,26 @@ h1, h2, h3, h4, h5 {
 	justify-content: center;
 	width: 100%;
 	line-height: 2;
+	background-color: #45A29E;
 }
 .container{
 	width: 80%;
+	background-color: #45A29E;
 }
 /************** Navigation **************/
+hr{
+	border: solid black 1px;
+}
+
+
 .navigation{
 	display: flex;
 	justify-content: space-between;
-	margin: 20px 0px;
+	padding: 20px 0px;
+	background-color: rgb(160, 160, 160);
+	position: sticky;
+	top: 0;
+	opacity: 90%;
 }
 .nav{
 	display: flex;
@@ -138,7 +149,7 @@ h1, h2, h3, h4, h5 {
 	flex-direction: column;
 	padding: 15px;
 	border: solid black 1px;
-	background-color: gainsboro;
+	background-color: #66fcf1;
 	margin: 20px 0px
 }
 .box_container .box button{
@@ -147,7 +158,7 @@ h1, h2, h3, h4, h5 {
 	font-size: .75rem;
 	font-weight: bold;
 	border:solid black 1px;
-	background-color: lightcyan;
+	background-color: #45A29E;
 	margin: 10px 10px 10px 0px;
 }
 .box_container .box button:hover{
@@ -180,6 +191,7 @@ h1, h2, h3, h4, h5 {
 .facts .facts_div p{
 	font-size: 1rem;
 	line-height: 1.5;
+	
 }
 .facts .facts_div ul{
 	list-style-type: disc;
@@ -191,4 +203,78 @@ footer{
 	justify-content: center;
 	align-items: center;
 	height: 100px;
+}
+/*************** Media Query max 800px ***************/
+@media(max-width: 800px){
+	.container{
+		width: 90%;
+	}
+	/* Navigation */
+	.navigation{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.nav{
+		width: 100%;
+	}
+	/* Services */
+	.services h1{
+		text-align: center;
+		margin: 0;
+	}
+	/* Box Section */
+	.box_container{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+	}
+	.box_container .box{
+		width: 100%;
+		margin: 10px 0px
+	}
+	/* Facts Section */
+	.facts{
+		flex-wrap: wrap;
+	}
+	.facts div{
+		width: 100%;
+	}
+	.facts .facts_img{
+		
+		display: none;
+	}
+	.facts .facts_div ul{
+		background-image: url("/img/services-info.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: right;
+	}
+}
+/**************** Media Query max 500px ***************/
+@media(max-width: 500px){
+	.nav{
+		flex-direction: column;
+		align-items: center;
+	}
+	.navigation{
+		padding: 20px 0px 0px 0px;
+		background-color: #45A29E;
+		position: relative;
+		opacity: 100%;
+	}
+	.nav a{
+		border-bottom: solid black 1px;
+		width: 100%;
+		text-align: center;
+	}
+	.top_img{
+		display: flex;
+		justify-content: center;
+		width: 100%;
+		height: 150px;
+		background-image: url("/img/services-header.jpg");
+		background-size: cover;
+	}
 }
