@@ -69,6 +69,7 @@ h1, h2, h3, h4, h5 {
 body{
 	display: flex;
 	justify-content: center;
+	width: 100vw;
 }
 .container{
 	width: 80%;
@@ -253,7 +254,7 @@ footer{
 		height: 50%;
 	}
 	.middle_img{
-		height: 8%;
+		height: 10%;
 		background-image: url("/img/mid-page-accent.jpg");
 		background-size: cover;
 	}
@@ -271,6 +272,12 @@ footer{
 		justify-content: center;
 		height: 35%;
 		width: 100%;
+	}
+	.header_box1 h1{
+		font-size: 300%; 
+	}
+	.header_box1{
+		justify-content: space-evenly;
 	}
 }
 
