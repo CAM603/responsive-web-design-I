@@ -92,6 +92,8 @@ body{
 	display: flex;
 	align-items: center;
 	padding: 10px;
+	color: grey;
+	text-decoration: none;
 }
 .nav_bar a:hover{
 	background-color: black;
