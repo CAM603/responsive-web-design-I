@@ -23,6 +23,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	border: solid black 1px;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -66,3 +67,82 @@ h1, h2, h3, h4, h5 {
 }
 
 /* My Code Starts Here */
+.body{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	line-height: 2;
+}
+.container{
+	width: 80%;
+}
+/* Navigation */
+.navigation{
+	display: flex;
+	justify-content: space-between;
+}
+.nav{
+	display: flex;
+	width: 75%;
+	justify-content: space-between;
+}
+.nav_img{
+	display: flex;
+	width: 25%;
+	justify-content: flex-end;
+}
+/* Top Image */
+.top_img{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 150px;
+	background-image: url("/img/services-header.jpg");
+	background-size: cover;
+}
+/* Services Section */
+.services{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.services p{
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+/* Box Section */
+.box_container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.box_container .box{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+.box_container .box button{
+	width: 30%;
+	padding: 5px;
+	border:solid orange 1px;
+	margin: 10px 10px 10px 0px;
+}
+.box_container .box p{
+	line-height: 1.5;
+	font-size: 1rem;
+}
+/* Facts Section */
+.facts{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.facts div{
+	width: 48%;
+}
+.facts .facts_img{
+	background-image: url("");
+}
