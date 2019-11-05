@@ -1,0 +1,292 @@
+/* Use your own code or past solution for Great Idea Web Page CSS here! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+v2.0 | 20110126
+License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	/* border: solid black 1px; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set every element's box-sizing to border-box */
+* {
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Titillium Web', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Bangers', cursive;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+/************** My Code Starts Here **************/
+body{
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	line-height: 2;
+	background-color: #45A29E;
+}
+.container{
+	width: 80%;
+	background-color: #45A29E;
+}
+/************** Navigation **************/
+hr{
+	border: solid black 1px;
+}
+
+
+.navigation{
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0px;
+	background-color: #45A29E;
+	opacity: 90%;
+	position: sticky;
+	top: 0;
+	
+}
+.nav{
+	display: flex;
+	width: 75%;
+	justify-content: space-between;
+}
+.nav_img{
+	display: flex;
+	min-width: 25%;
+	height: 100%;
+	justify-content: flex-end;
+}
+.nav a{
+	font-size: 1.5rem;
+	padding: 5px;
+	font-weight: bold;
+	color: black;
+	text-decoration: none;
+}
+.nav a:hover{
+	background-color: black;
+	color: white;
+	border-radius: 10px 10px;
+}
+/************** Top Image **************/
+.top_img{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 150px;
+	background-image: url("/img/services-header.jpg");
+	background-size: cover;
+}
+/************** Services Section ************* */
+.services{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+}
+.services p{
+	font-size: 1rem;
+	line-height: 1.5;
+}
+.services h1{
+	font-size: 2rem;
+}
+
+/************** Box Section **************/
+.box_container{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	
+}
+.box_container .box{
+	width: 48%;
+	display: flex;
+	flex-direction: column;
+	padding: 15px;
+	border: solid black 1px;
+	background-color: #66fcf1;
+	margin: 20px 0px
+}
+.box_container .box button{
+	width: 30%;
+	padding: 5px;
+	font-size: .75rem;
+	font-weight: bold;
+	border:solid black 1px;
+	background-color: #45A29E;
+	margin: 10px 10px 10px 0px;
+}
+.box_container .box button:hover{
+	background-color: black;
+	color: white;
+}
+
+.box_container .box p{
+	line-height: 1.5;
+	font-size: 1rem;
+}
+.box_container .box h2{
+	font-size: 1.1rem;
+}
+/************** Facts Section **************/
+.facts{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.facts div{
+	width: 48%;
+}
+.facts .facts_img{
+	background-image: url("/img/services-info.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	max-height: 100%;
+}
+.facts .facts_div p{
+	font-size: 1rem;
+	line-height: 1.5;
+	
+}
+.facts .facts_div ul{
+	list-style-type: disc;
+	margin: 0px 0px 0px 25px;
+}
+/************** Copyright **************/
+footer{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100px;
+}
+/*************** Media Query max 800px ***************/
+@media(max-width: 800px){
+	.container{
+		width: 90%;
+	}
+	/* Navigation */
+	.navigation{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.nav{
+		width: 100%;
+	}
+	/* Services */
+	.services h1{
+		text-align: center;
+		margin: 0;
+	}
+	/* Box Section */
+	.box_container{
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		
+	}
+	.box_container .box{
+		width: 100%;
+		margin: 10px 0px
+	}
+	/* Facts Section */
+	.facts{
+		flex-wrap: wrap;
+	}
+	.facts div{
+		width: 100%;
+	}
+	.facts .facts_img{
+		display: none;
+	}
+	.facts .facts_div ul{
+		background-image: url("/img/services-info.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position-x: right;
+	}
+}
+/**************** Media Query max 500px ***************/
+@media(max-width: 500px){
+	.nav{
+		flex-direction: column;
+		align-items: center;
+	}
+	.navigation{
+		padding: 20px 0px 0px 0px;
+		background-color: #45A29E;
+		position: relative;
+		opacity: 100%;
+	}
+	.nav a{
+		border-bottom: solid black 1px;
+		width: 100%;
+		text-align: center;
+	}
+	.top_img{
+		height: 100px;
+		margin-top: 20px;
+	}
+	.box_container .box button{
+		width: 100%;
+		padding: 10px;
+		margin: 20px 0px 0px 0px;
+		border-radius: 6px;
+	}
+	.facts_div{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.facts .facts_div ul{
+		background-image: none;
+	}
+}
