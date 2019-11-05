@@ -51,11 +51,10 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	max-width: 100%;
+	
 }
 
 html, body {
-    height: 100vh;
     font-family: 'Titillium Web', sans-serif;
 }
 
@@ -251,7 +250,7 @@ footer{
 		height: 300px;
 	}
 	.about_section{
-		height: 40%;
+		height: 30%;
 		width: 100%;
 		display: flex;
 		flex-wrap: nowrap;

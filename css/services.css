@@ -52,12 +52,10 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	max-width: 100%;
 }
 
 html, body {
-    height: 100vh;
-    font-family: 'Titillium Web', sans-serif;
+	font-family: 'Titillium Web', sans-serif;
 }
 
 h1, h2, h3, h4, h5 {
@@ -67,10 +65,10 @@ h1, h2, h3, h4, h5 {
 }
 
 /************** My Code Starts Here **************/
-.body{
+body{
+	max-width: 100%;
 	display: flex;
 	justify-content: center;
-	width: 100%;
 	line-height: 2;
 	background-color: #45A29E;
 }
